@@ -1,0 +1,76 @@
+:root {
+    --primary-color:#ffff;
+    --secondary:#867cf2;
+    --accent:#39b329;
+    --other:#474284;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+body {
+    margin:0;
+    font-family:'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(img/background.avif.jpg);
+    background-size: cover;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    /*remove scroll bar
+    overflow:hidden*/
+}
+
+h2 {
+    font-size: 3.8rem;
+    letter-spacing: 0.4rem;
+    text-align: center;
+}
+
+.clock {
+    display: flex;
+}
+
+.clock div {
+    margin: 0.5rem;
+    position: relative;
+}
+
+
+
+.clock span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    background: var(--secondary);
+    opacity: 0.8;
+    width: 100px;
+    height: 80px;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.3);
+}
+
+.clock .text {
+    height: 1.8rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
+    background-color: var(--other);
+    opacity: .8;
+}
+
+.clock #ampm {
+    bottom: 0;
+    position: absolute;
+    height: 30px;
+    width: 60px;
+    font-size: 1.2rem;
+    background: var(--accent);
+}
